@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site institucional do Sindicato dos Produtores Rurais de Marabá (SPRM). Acesse serviços, cotações e notícias do agronegócio da região.">
+    <title>Sindicato dos Produtores Rurais de Marabá - SPRM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Phosphor Icons para ícones rápidos e modernos -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="assets/aprm-logo.png" alt="Logo APRM" class="header-logo">
+                <img src="assets/sprm-logo.png" alt="Logo SPRM" class="header-logo">
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Abrir menu" id="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#cotacoes">Cotações</a></li>
+                    <li><a href="#expoama">Expoama</a></li>
+                    <li><a href="#utilidades">Utilidades</a></li>
+                    <li><a href="#transparencia">Transparência</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2>Associação dos Produtores Rurais de Marabá</h2>
+            <p>Representando e fortalecendo o agronegócio da nossa região com serviços, informações e
+                representatividade.</p>
+            <a href="#servicos" class="btn btn-primary">Acessar Serviços</a>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Sobre o Sindicato</h2>
+            <p
+                style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--color-text-muted); font-size: 1.125rem;">
+                Fundado para representar e fortalecer a classe produtora de Marabá e região, o SPRM atua na defesa dos
+                interesses do agronegócio, oferecendo suporte técnico, representatividade e fomento para o
+                desenvolvimento de nossos associados.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services (Mobile-First Focus) -->
+    <section id="servicos" class="services section">
+        <div class="container">
+            <h2 class="section-title">Serviços Rápidos</h2>
+            <div class="services-grid">
+                <a href="#" class="service-card">
+                    <i class="ph ph-file-text"></i>
+                    <h3>Emissão de GTA</h3>
+                    <p>Guia de Trânsito Animal</p>
+                </a>
+                <a href="#" class="service-card">
+                    <i class="ph ph-receipt"></i>
+                    <h3>ITR</h3>
+                    <p>Imposto Territorial Rural</p>
+                </a>
+                <a href="#" class="service-card">
+                    <i class="ph ph-handshake"></i>
+                    <h3>Convênios</h3>
+                    <p>Parcerias e descontos</p>
+                </a>
+                <a href="#" class="service-card">
+                    <i class="ph ph-users"></i>
+                    <h3>Associe-se</h3>
+                    <p>Faça parte do SPRM</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Quotes & News -->
+    <section id="cotacoes" class="quotes section bg-light">
+        <div class="container">
+            <h2 class="section-title">Mercado e Cotações</h2>
+            <div class="quotes-grid">
+                <!-- Floating Card 1: Boi Gordo -->
+                <div class="floating-card quote-card">
+                    <div class="quote-header">
+                        <i class="ph ph-cow"></i>
+                        <h3>Boi Gordo</h3>
+                    </div>
+                    <div class="quote-price">
+                        <span class="currency">R$</span>
+                        <span class="value" id="boi-price">--,--</span>
+                    </div>
+                    <div class="quote-trend" id="boi-trend">
+                        <!-- Dynamic content -->
+                    </div>
+                    <p class="quote-meta">Marabá / Arroba à vista</p>
+                </div>
+
+                <!-- Floating Card 2: Soja -->
+                <div class="floating-card quote-card">
+                    <div class="quote-header">
+                        <i class="ph ph-plant"></i>
+                        <h3>Soja</h3>
+                    </div>
+                    <div class="quote-price">
+                        <span class="currency">R$</span>
+                        <span class="value" id="soja-price">--,--</span>
+                    </div>
+                    <div class="quote-trend" id="soja-trend">
+                        <!-- Dynamic content -->
+                    </div>
+                    <p class="quote-meta">Saca 60kg</p>
+                </div>
+
+                <!-- Floating Card 3: News -->
+                <div class="floating-card news-card">
+                    <span class="badge">Última Notícia</span>
+                    <h3>Campanha de Vacinação Contra Aftosa</h3>
+                    <p>Produtor rural, fique atento aos prazos para vacinação do seu rebanho...</p>
+                    <a href="#" class="btn btn-outline btn-sm">Ler mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expoama Showcase -->
+    <section id="expoama" class="expoama section">
+        <div class="container">
+            <div class="expoama-header">
+                <h2 class="section-title">EXPOAMA 2026</h2>
+                <p>UM ESPETÁCULO QUE UNE A TRADIÇÃO E A MODERNIDADE CELEBRANDO A FORÇA E A CULTURA DO HOMEN DO CAMPO.
+                </p>
+            </div>
+
+            <div class="gallery-slider">
+                <div class="gallery-track" id="gallery-track">
+                    <img src="assets/expoama-1.png" alt="Demonstração Expoama 1" class="gallery-item active">
+                    <img src="assets/expoama-2.png" alt="Demonstração Expoama 2" class="gallery-item">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev-btn" aria-label="Anterior"><i class="ph ph-caret-left"></i></button>
+                    <button id="next-btn" aria-label="Próximo"><i class="ph ph-caret-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Utility Links -->
+    <section id="utilidades" class="utilities section bg-light">
+        <div class="container">
+            <h2 class="section-title">Utilidades</h2>
+            <div class="utility-buttons">
+                <a href="#" class="btn btn-utility">
+                    <i class="ph ph-invoice"></i> Emissão de Notas
+                </a>
+                <a href="#" class="btn btn-utility">
+                    <i class="ph ph-graduation-cap"></i> Cursos do SENAR
+                </a>
+                <a href="#" class="btn btn-utility">
+                    <i class="ph ph-map-pin"></i> Localização do Sindicato
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparência Section -->
+    <section id="transparencia" class="section">
+        <div class="container">
+            <h2 class="section-title">Portal da Transparência</h2>
+            <p
+                style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--color-text-muted); font-size: 1.125rem; margin-bottom: 32px;">
+                Comprometidos com a ética e a gestão responsável. Acesse nossos balanços, relatórios de gestão e
+                documentos públicos.
+            </p>
+            <div style="text-align: center;">
+                <a href="#" class="btn btn-primary"><i class="ph ph-file-pdf"></i> Acessar Documentos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <div style="display: flex; gap: 12px; margin-bottom: 16px;">
+                    <img src="assets/aprm-logo.png" alt="Logo APRM" class="header-logo">
+                    <img src="assets/sprm-logo.png" alt="Logo SPRM" class="header-logo">
+                </div>
+                <p>Sindicato dos Produtores Rurais de Marabá</p>
+                <p>Rodovia Transamazônica, km 03 - Nova Marabá</p>
+            </div>
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <p><i class="ph ph-phone"></i> (94) 3322-0000</p>
+                <p><i class="ph ph-envelope"></i> contato@sprm.com.br</p>
+            </div>
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sindicato dos Produtores Rurais de Marabá. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
