@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portal da Transparência do Sindicato dos Produtores Rurais de Marabá (SPRM). Acesse nossos balanços, estatutos e atas.">
+    <title>Portal da Transparência - SPRM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Phosphor Icons para ícones rápidos e modernos -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" style="display: flex; gap: 12px;">
+                    <img src="assets/aprm-logo.png" alt="Logo APRM" class="header-logo">
+                    <img src="assets/sprm-logo.png" alt="Logo SPRM" class="header-logo">
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Abrir menu" id="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#cotacoes">Cotações</a></li>
+                    <li><a href="index.html#expoama">Expoama</a></li>
+                    <li><a href="index.html#utilidades">Utilidades</a></li>
+                    <li><a href="transparencia.html" style="color: var(--color-secondary);">Transparência</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Transparencia Hero/Header -->
+    <section class="section bg-light" style="padding-bottom: 32px;">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Portal da Transparência</h2>
+            <p style="max-width: 800px; margin: 0 auto; color: var(--color-text-muted); font-size: 1.125rem;">
+                Comprometidos com a ética, a clareza e a gestão responsável. Aqui você encontra todos os documentos
+                públicos, estatutos, balanços financeiros e relatórios do Sindicato.
+            </p>
+        </div>
+    </section>
+
+    <!-- Document List -->
+    <section class="section" style="padding-top: 32px; min-height: 50vh;">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Categoria 1 -->
+                <div class="service-card" style="text-align: left; display: flex; flex-direction: column;">
+                    <i class="ph ph-file-text" style="font-size: 2.5rem; margin-bottom: 12px;"></i>
+                    <h3 style="margin-bottom: 8px;">Nota de transparencia</h3>
+                    <p style="margin-bottom: 24px; flex-grow: 1;">divulgação obrigatória de dados públicos sobre
+                        receitas, despesas, licitações e contratos.</p>
+                    <a href="assets/documentos/nota_de_transparencia.pdf" download class="btn btn-outline btn-sm"
+                        style="width: 100%;"><i class="ph ph-download-simple"></i> Baixar PDF</a>
+                </div>
+
+                <!-- Categoria 2 -->
+                <div class="service-card" style="text-align: left; display: flex; flex-direction: column;">
+                    <i class="ph ph-chart-line-up" style="font-size: 2.5rem; margin-bottom: 12px;"></i>
+                    <h3 style="margin-bottom: 8px;">Projetos em Trâmite</h3>
+                    <p style="margin-bottom: 24px; flex-grow: 1;">Projetos em trâmite de aprovação,análise em comissões.
+                    </p>
+                    <a href="assets/documentos/projetos_em_tramite.pdf" download class="btn btn-outline btn-sm"
+                        style="width: 100%;"><i class="ph ph-download-simple"></i> Baixar PDF</a>
+                </div>
+
+                <!-- Categoria 3 -->
+                <div class="service-card" style="text-align: left; display: flex; flex-direction: column;">
+                    <i class="ph ph-users-three" style="font-size: 2.5rem; margin-bottom: 12px;"></i>
+                    <h3 style="margin-bottom: 8px;">Declaração de Publicidade</h3>
+                    <p style="margin-bottom: 24px; flex-grow: 1;">Declaração referente ao projeto EXPOAMA 2025.</p>
+                    <a href="assets/documentos/declaracao_de_publicidade.pdf" download class="btn btn-outline btn-sm"
+                        style="width: 100%;"><i class="ph ph-download-simple"></i> Baixar PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <div style="display: flex; gap: 12px; margin-bottom: 16px;">
+                    <img src="assets/aprm-logo.png" alt="Logo APRM" class="header-logo">
+                    <img src="assets/sprm-logo.png" alt="Logo SPRM" class="header-logo">
+                </div>
+                <p>Sindicato dos Produtores Rurais de Marabá</p>
+                <p>Rodovia Transamazônica, km 03 - Nova Marabá</p>
+            </div>
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <p><i class="ph ph-phone"></i> (94) 3322-0000</p>
+                <p><i class="ph ph-envelope"></i> contato@sprm.com.br</p>
+            </div>
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sindicato dos Produtores Rurais de Marabá. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
