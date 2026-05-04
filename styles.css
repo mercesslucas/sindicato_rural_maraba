@@ -386,63 +386,25 @@ ul {
     margin-bottom: 48px;
 }
 
-.gallery-slider {
-    position: relative;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-float);
-    aspect-ratio: 16/9;
-    max-height: 500px;
-    background-color: #000;
-}
-
-.gallery-track {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.gallery-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity var(--transition-smooth);
-}
-
-.gallery-item.active {
-    opacity: 1;
-}
-
-.gallery-controls {
-    position: absolute;
-    bottom: 24px;
-    right: 24px;
-    display: flex;
-    gap: 16px;
-}
-
-.gallery-controls button {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: none;
-    color: var(--color-primary);
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: flex;
+.expoama-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
     align-items: center;
-    justify-content: center;
-    transition: all var(--transition-fast);
 }
 
-.gallery-controls button:hover {
-    background-color: white;
-    transform: scale(1.1);
+.expoama-banner, .expoama-video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-float);
+}
+
+@media (max-width: 768px) {
+    .expoama-media {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Utilities */

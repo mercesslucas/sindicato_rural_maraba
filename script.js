@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initQuotes();
-    initExpoamaGallery();
 });
 
 // Mobile Menu Logic
@@ -151,49 +150,3 @@ async function fetchSoja() {
     }
 }
 
-// Expoama Gallery Slider Logic
-function initExpoamaGallery() {
-    const track = document.getElementById('gallery-track');
-    if (!track) return;
-
-    const items = track.querySelectorAll('.gallery-item');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    
-    if (items.length <= 1) return; // No need for slider if only 0 or 1 image
-
-    let currentIndex = 0;
-
-    function showSlide(index) {
-        items.forEach(item => item.classList.remove('active'));
-        items[index].classList.add('active');
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % items.length;
-        showSlide(currentIndex);
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        showSlide(currentIndex);
-    }
-
-    nextBtn.addEventListener('click', () => {
-        nextSlide();
-        resetInterval();
-    });
-
-    prevBtn.addEventListener('click', () => {
-        prevSlide();
-        resetInterval();
-    });
-
-    // Auto-advance
-    let autoPlay = setInterval(nextSlide, 5000);
-
-    function resetInterval() {
-        clearInterval(autoPlay);
-        autoPlay = setInterval(nextSlide, 5000);
-    }
-}
